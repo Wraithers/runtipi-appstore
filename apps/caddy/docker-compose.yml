@@ -1,7 +1,8 @@
-version: "3.7"
+version: "0.4"
 
 services:
   caddy:
+    container_name: caddy
     image: caddy:2.7.6
     restart: unless-stopped
     cap_add:
@@ -13,14 +14,10 @@ services:
       - ${APP_PORT}:443
       - ${APP_PORT}:443/udp
     volumes:
-      - ${APP_DATA_DIR}/$PWD/Caddyfile:/etc/caddy/Caddyfile
-      - ${APP_DATA_DIR}/$PWD/site:/srv
-      - ${APP_DATA_DIR}/caddy_data:/data
-      - ${APP_DATA_DIR}/caddy_config:/config
+      - ${APP_DATA_DIR}/Caddyfile:/etc/caddy/Caddyfile
+      - ${APP_DATA_DIR}/site:/srv
+      - ${APP_DATA_DIR}/data:/data
+      - ${APP_DATA_DIR}/config:/config
     networks:
       - tipi_main_network
 
-volumes:
-  ${APP_DATA_DIR}/caddy_data:
-    external: true
-  ${APP_DATA_DIR}/caddy_config:
