@@ -1,6 +1,6 @@
 # Tipi App Store ⛺️
 
-This is the official repository for the Tipi App Store. It contains all the apps that are available for download on [Tipi](https://github.com/meienberger/runtipi).
+This is the local repository for the Tipi App Store. It contains all the apps that are available for download on [Tipi](https://github.com/meienberger/runtipi).
 
 ## Apps available
 
@@ -16,6 +16,7 @@ This is the official repository for the Tipi App Store. It contains all the apps
 - [Booksonic](https://github.com/popeen) - A server for streaming your audiobooks
 - [Budibase](https://github.com/Budibase/budibase) - Low code platform for creating internal tools, workflows, and admin panels in minutes. Supports PostgreSQL, MySQL, MSSQL, MongoDB, Rest API, Docker, K8s, and more 🚀. Budibase, the low code platform you'll enjoy using ⚡
 - [Bookstack](https://github.com/BookStackApp/BookStack) - Simple, easy-to-use platform for organising and storing information.
+- [Caddy](https://caddyserver.com) - Caddy caddy caddy
 - [Calibre-Web](https://github.com/janeczku/calibre-web) - Web Ebook Reader
 - [ChangeDetection.io](https://github.com/dgtlmoon/changedetection.io) - The best and simplest free open source website change detection, restock monitor and notification service.
 - [Chatpad AI](https://github.com/deiucanta/chatpad) - Not just another ChatGPT user-interface!
