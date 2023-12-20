@@ -2,15 +2,15 @@
   "name": "Caddy",
   "available": true,
   "port": 8280,
-  "exposable": true, # Whether the app can be exposed via a domain name
-  "id": "caddy", # This should be the same name as the folder
-  "description": "Caddy 2 is a powerful enterprise-ready open source web server with automatic HTTPS written in Go.", # Long description of the app
-  "tipi_version": 1, # Always 1 if you are adding a new app
-  "version": "2.7.6", # The actual version of the app (not the tipi version)
-  "categories": ["utilities"], # One or more categories for the app
-  "short_desc": "TBD Short", # Short description of the app
-  "author": "https://hub.docker.com/_/caddy", # Link or name of the author 
-  "source": "https://github.com/caddyserver/caddy-docker", # Link for git repo
-  "website": "https://caddyserver.com", # Link to the official website
-  "form_fields": [] # Used to ask for more info to the user before installing. Will be explained further
+  "exposable": true,
+  "id": "caddy",
+  "description": "Caddy 2 is a powerful enterprise-ready open source web server with automatic HTTPS written in Go.",
+  "tipi_version": 1,
+  "version": "2.7.6",
+  "categories": ["utilities"],
+  "short_desc": "TBD Short",
+  "author": "https://hub.docker.com/_/caddy",
+  "source": "https://github.com/caddyserver/caddy-docker",
+  "website": "https://caddyserver.com",
+  "form_fields": []
 }
