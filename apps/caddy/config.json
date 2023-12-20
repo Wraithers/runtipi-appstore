@@ -1,4 +1,5 @@
 {
+  "$schema": "../schema.json",
   "name": "Caddy",
   "available": true,
   "port": 8280,
