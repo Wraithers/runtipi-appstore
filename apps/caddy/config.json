@@ -1,9 +1,8 @@
 {
-  "$schema": "../schema.json",
   "name": "Caddy",
   "available": true,
   "port": 8280,
-  "exposable": true, # Wether the app can be exposed via a domain name
+  "exposable": true, # Whether the app can be exposed via a domain name
   "id": "caddy", # This should be the same name as the folder
   "description": "Caddy 2 is a powerful enterprise-ready open source web server with automatic HTTPS written in Go.", # Long description of the app
   "tipi_version": 1, # Always 1 if you are adding a new app
