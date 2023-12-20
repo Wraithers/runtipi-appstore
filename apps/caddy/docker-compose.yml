@@ -8,14 +8,15 @@ services:
     cap_add:
       - NET_ADMIN
     privileged: true
-    network_mode: host
     ports:
       - ${APP_PORT}:80
       - ${APP_PORT}:443
       - ${APP_PORT}:443/udp
     volumes:
-      - ${APP_DATA_DIR}/Caddyfile:/etc/caddy/Caddyfile
+      - ${APP_DATA_DIR}:/etc/caddy
       - ${APP_DATA_DIR}/site:/srv
       - ${APP_DATA_DIR}/data:/data
       - ${APP_DATA_DIR}/config:/config
+    networks:
+      - tipi_main_network
 
