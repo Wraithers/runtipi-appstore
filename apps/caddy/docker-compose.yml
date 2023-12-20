@@ -18,6 +18,4 @@ services:
       - ${APP_DATA_DIR}/site:/srv
       - ${APP_DATA_DIR}/data:/data
       - ${APP_DATA_DIR}/config:/config
-    networks:
-      - tipi_main_network
 
