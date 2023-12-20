@@ -4,7 +4,7 @@
   "port": 8280,
   "exposable": true, # Wether the app can be exposed via a domain name
   "id": "caddy", # This should be the same name as the folder
-  "description": "Caddy 2 is a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go.", # Long description of the app
+  "description": "Caddy 2 is a powerful enterprise-ready open source web server with automatic HTTPS written in Go.", # Long description of the app
   "tipi_version": 1, # Always 1 if you are adding a new app
   "version": "2.7.6", # The actual version of the app (not the tipi version)
   "categories": ["utilities"], # One or more categories for the app
