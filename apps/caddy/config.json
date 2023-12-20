@@ -1,7 +1,7 @@
 {
   "name": "Caddy",
   "available": true,
-  "port": 8280,
+  "port": 8981,
   "exposable": true,
   "id": "caddy",
   "description": "Caddy 2 is a powerful enterprise-ready open source web server with automatic HTTPS written in Go.",
