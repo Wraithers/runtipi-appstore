@@ -1,10 +1,10 @@
-version: "3.7"
+version: "3.8"
 
 services:
 
   immich:
     container_name: immich
-    image: altran1502/immich-server:v1.91.4
+    image: altran1502/immich-server:1.92.1
     command: ["start-server.sh"]
     volumes:
       - /etc/localtime:/etc/localtime:ro
@@ -29,33 +29,33 @@ services:
       - tipi_main_network
     labels:
       # Main
-      traefik.enable: true
-      traefik.http.middlewares.immich-web-redirect.redirectscheme.scheme: https
-      traefik.http.services.immich.loadbalancer.server.port: 3001
+      # traefik.enable: true
+      # traefik.http.middlewares.immich-web-redirect.redirectscheme.scheme: https
+      # traefik.http.services.immich.loadbalancer.server.port: 3001
       # Web
-      traefik.http.routers.immich-insecure.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.immich-insecure.entrypoints: web
-      traefik.http.routers.immich-insecure.service: immich
-      traefik.http.routers.immich-insecure.middlewares: immich-web-redirect
+      # traefik.http.routers.immich-insecure.rule: Host(`${APP_DOMAIN}`)
+      # traefik.http.routers.immich-insecure.entrypoints: web
+      # traefik.http.routers.immich-insecure.service: immich
+      # traefik.http.routers.immich-insecure.middlewares: immich-web-redirect
       # Websecure
-      traefik.http.routers.immich.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.immich.entrypoints: websecure
-      traefik.http.routers.immich.service: immich
-      traefik.http.routers.immich.tls.certresolver: myresolver
+      # traefik.http.routers.immich.rule: Host(`${APP_DOMAIN}`)
+      # traefik.http.routers.immich.entrypoints: websecure
+      # traefik.http.routers.immich.service: immich
+      # traefik.http.routers.immich.tls.certresolver: myresolver
       # Local domain
-      traefik.http.routers.immich-local-insecure.rule: Host(`immich.${LOCAL_DOMAIN}`)
-      traefik.http.routers.immich-local-insecure.entrypoints: web
-      traefik.http.routers.immich-local-insecure.service: immich
-      traefik.http.routers.immich-local-insecure.middlewares: immich-web-redirect
+      # traefik.http.routers.immich-local-insecure.rule: Host(`immich.${LOCAL_DOMAIN}`)
+      # traefik.http.routers.immich-local-insecure.entrypoints: web
+      # traefik.http.routers.immich-local-insecure.service: immich
+      # traefik.http.routers.immich-local-insecure.middlewares: immich-web-redirect
       # Local domain secure
-      traefik.http.routers.immich-local.rule: Host(`immich.${LOCAL_DOMAIN}`)
-      traefik.http.routers.immich-local.entrypoints: websecure
-      traefik.http.routers.immich-local.service: immich
-      traefik.http.routers.immich-local.tls: true
+      # traefik.http.routers.immich-local.rule: Host(`immich.${LOCAL_DOMAIN}`)
+      # traefik.http.routers.immich-local.entrypoints: websecure
+      # traefik.http.routers.immich-local.service: immich
+      # traefik.http.routers.immich-local.tls: true
 
   immich-microservices:
     container_name: immich-microservices
-    image: altran1502/immich-server:v1.91.4
+    image: altran1502/immich-server:1.92.1
     command: ["start-microservices.sh"]
     volumes:
       - /etc/localtime:/etc/localtime:ro
@@ -78,7 +78,7 @@ services:
 
   immich-machine-learning:
     container_name: immich-machine-learning
-    image: altran1502/immich-machine-learning:v1.91.4
+    image: altran1502/immich-machine-learning
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /mnt/data/pictures:/usr/src/app/upload
