@@ -78,7 +78,7 @@ services:
 
   immich-machine-learning:
     container_name: immich-machine-learning
-    image: altran1502/immich-machine-learning
+    image: altran1502/immich-machine-learning:1.92.1
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /mnt/data/pictures:/usr/src/app/upload
