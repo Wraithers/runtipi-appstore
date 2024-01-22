@@ -17,7 +17,7 @@ services:
       - ${APP_PORT}:7575
     networks:
       - tipi_main_network
-    labels:
+#    labels:
       # Main
 #      traefik.enable: true
 #      traefik.http.middlewares.homarr-web-redirect.redirectscheme.scheme: https
