@@ -8,7 +8,7 @@ services:
         volumes:
         - /etc/localtime:/etc/localtime:ro
         - /mnt/data/Dev/silverbullet/space:/space
-        evironment:
+        environment:
         - SB_USER=${SB_USER}:${SB_PASSWORD}
         ports:
         - ${APP_PORT}:3000
