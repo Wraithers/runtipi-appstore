@@ -1,12 +1,12 @@
 {
   "$schema": "../schema.json",
   "name": "Zigbee2MQTT",
-  "port": 8290,
+  "port": 8183,
   "available": true,
   "exposable": true,
   "id": "zigbee2mqtt",
-  "tipi_version": 2,
-  "version": "1.36.0",
+  "tipi_version": 3,
+  "version": "1.36.1",
   "categories": [
     "utilities",
     "automation"
