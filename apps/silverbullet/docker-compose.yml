@@ -7,7 +7,7 @@ services:
         restart: unless-stopped
         volumes:
         - /etc/localtime:/etc/localtime:ro
-        - /mnt/data/proxmox/silverbullet/space:/space
+        - /mnt/data/silverbullet/space:/space
         environment:
         - SB_USER=${SB_USER}:${SB_PASSWORD}
         ports:
