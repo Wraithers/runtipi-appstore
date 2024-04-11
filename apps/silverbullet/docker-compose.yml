@@ -2,12 +2,12 @@ version: '0.5'
 
 services:
     silverbullet:
-        image: zefhemel/silverbullet:0.7.3
+        image: zefhemel/silverbullet:0.7.6
         container_name: 'silverbullet'
         restart: unless-stopped
         volumes:
         - /etc/localtime:/etc/localtime:ro
-        - /mnt/data/Dev/silverbullet/space:/space
+        - /mnt/data/proxmox/silverbullet/space:/space
         environment:
         - SB_USER=${SB_USER}:${SB_PASSWORD}
         ports:
