@@ -7,6 +7,7 @@
   "id": "authentik",
   "tipi_version": 10,
   "version": "2024.2.2",
+  "https": true,
   "categories": [
     "development"
   ],
