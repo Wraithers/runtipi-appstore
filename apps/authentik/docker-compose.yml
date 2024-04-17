@@ -24,33 +24,33 @@ services:
       - authentik-redis
     networks:
       - tipi_main_network
-    labels:
+    #labels:
       # Main
-      traefik.enable: true
-      traefik.http.middlewares.authentik-web-redirect.redirectscheme.scheme: https
-      traefik.http.services.authentik.loadbalancer.server.port: 9000
+      #traefik.enable: true
+      #traefik.http.middlewares.authentik-web-redirect.redirectscheme.scheme: https
+      #traefik.http.services.authentik.loadbalancer.server.port: 9000
       # Web
-      traefik.http.routers.authentik-insecure.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.authentik-insecure.entrypoints: web
-      traefik.http.routers.authentik-insecure.service: authentik
-      traefik.http.routers.authentik-insecure.middlewares: authentik-web-redirect
+      #traefik.http.routers.authentik-insecure.rule: Host(`${APP_DOMAIN}`)
+      #traefik.http.routers.authentik-insecure.entrypoints: web
+      #traefik.http.routers.authentik-insecure.service: authentik
+      #traefik.http.routers.authentik-insecure.middlewares: authentik-web-redirect
       # Websecure
-      traefik.http.routers.authentik.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.authentik.entrypoints: websecure
-      traefik.http.routers.authentik.service: authentik
-      traefik.http.routers.authentik.tls.certresolver: myresolver
+      #traefik.http.routers.authentik.rule: Host(`${APP_DOMAIN}`)
+      #traefik.http.routers.authentik.entrypoints: websecure
+      #traefik.http.routers.authentik.service: authentik
+      #traefik.http.routers.authentik.tls.certresolver: myresolver
       # Local domain
-      traefik.http.routers.authentik-local-insecure.rule: Host(`authentik.${LOCAL_DOMAIN}`)
-      traefik.http.routers.authentik-local-insecure.entrypoints: web
-      traefik.http.routers.authentik-local-insecure.service: authentik
-      traefik.http.routers.authentik-local-insecure.middlewares: authentik-web-redirect
+      #traefik.http.routers.authentik-local-insecure.rule: Host(`authentik.${LOCAL_DOMAIN}`)
+      #traefik.http.routers.authentik-local-insecure.entrypoints: web
+      #traefik.http.routers.authentik-local-insecure.service: authentik
+      #traefik.http.routers.authentik-local-insecure.middlewares: authentik-web-redirect
       # Local domain secure
-      traefik.http.routers.authentik-local.rule: Host(`authentik.${LOCAL_DOMAIN}`)
-      traefik.http.routers.authentik-local.entrypoints: websecure
-      traefik.http.routers.authentik-local.service: authentik
-      traefik.http.routers.authentik-local.tls: true
+      #traefik.http.routers.authentik-local.rule: Host(`authentik.${LOCAL_DOMAIN}`)
+      #traefik.http.routers.authentik-local.entrypoints: websecure
+      #traefik.http.routers.authentik-local.service: authentik
+      #traefik.http.routers.authentik-local.tls: true
   authentik-worker:
-    image: ghcr.io/goauthentik/server:2023.10.4
+    image: ghcr.io/goauthentik/server:2024.2.3
     restart: unless-stopped
     command: worker
     container_name: authentik-worker
