@@ -4,15 +4,19 @@ services:
     image: lscr.io/linuxserver/bazarr:1.4.2
     container_name: bazarr
     environment:
-      - PUID=1000
-      - PGID=1000
+      - PUID=0
+      - PGID=0
       - TZ=${TZ}
     dns:
       - ${DNS_IP}
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - ${APP_DATA_DIR}/data:/config
-      - ${ROOT_FOLDER_HOST}/media:/media
+      - /mnt/data2/Movies:/data/media/movies/hotel:rw
+      - /mnt/datai/Movies:/data/media/movies/india:rw
+      - "/mnt/data2/TV Shows":/data/media/tv/hotel:rw
+      - "/mnt/datai/TV Shows":/data/media/tv/india:rw
+      - /mnt/data2/Anime:/data/media/anime/hotel:rw
     ports:
       - ${APP_PORT}:6767
     restart: unless-stopped
