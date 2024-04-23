@@ -11,8 +11,8 @@ services:
       - /mnt/datai/Books/Comics:/comics
       - ${ROOT_FOLDER_HOST}/media/downloads/mylar3:/downloads
     environment:
-      - PUID=0
-      - PGID=0
+      - PUID=1000
+      - PGID=1000
       - TZ=${TZ}
     restart: unless-stopped
     networks:
