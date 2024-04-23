@@ -12,6 +12,8 @@ services:
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - ${APP_DATA_DIR}/data:/config
+      - /mnt/data2/Downloads/Media:/data/torrents/incomplete:rw
+      - /mnt/data2/Downloads/Media/Completed:/data/torrents:rw
       - /mnt/data2/Movies:/data/media/movies/hotel:rw
       - /mnt/datai/Movies:/data/media/movies/india:rw
     ports:
