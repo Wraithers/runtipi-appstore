@@ -5,14 +5,14 @@
   "exposable": true,
   "port": 8112,
   "id": "readarr",
-  "tipi_version": 14,
+  "tipi_version": 15,
   "version": "0.3.23-nightly",
   "categories": [
     "books",
     "media"
   ],
-  "description": "",
-  "short_desc": "Book Manager and Automation (Sonarr for Ebooks)",
+  "description": "Book Manager & Automation (Sonarr for Ebooks)",
+  "short_desc": "Book Manager & Automation (Sonarr for Ebooks)",
   "author": "readarr.com",
   "source": "https://github.com/Readarr/Readarr",
   "form_fields": [],
