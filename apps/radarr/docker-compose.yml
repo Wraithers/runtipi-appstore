@@ -4,8 +4,8 @@ services:
     image: ghcr.io/linuxserver/radarr:5.4.6
     container_name: radarr
     environment:
-      - PUID=0
-      - PGID=0
+      - PUID=1000
+      - PGID=1000
       - TZ=${TZ}
     dns:
       - ${DNS_IP}
