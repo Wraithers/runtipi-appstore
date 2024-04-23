@@ -12,7 +12,7 @@ services:
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - ${APP_DATA_DIR}/data:/config
-      - ${ROOT_FOLDER_HOST}/media:/media
+      - /mnt/datai/Books/eBooks:/data/media/books:rw
     ports:
       - ${APP_PORT}:8787
     restart: unless-stopped
