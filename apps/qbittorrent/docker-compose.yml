@@ -12,7 +12,8 @@ services:
       - WEBUI_PORT=${APP_PORT}
     volumes:
       - ${APP_DATA_DIR}/data/config:/config
-      - ${ROOT_FOLDER_HOST}/media/torrents:/media/torrents
+      - /mnt/data2/Downloads/Media:/media/torrents:rw
+      - /mnt/data2/Downloads/Media/Completed:/media/torrents/completed:rw
     ports:
       - ${APP_PORT}:${APP_PORT}
       - 6881:6881
