@@ -12,8 +12,8 @@ services:
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - ${APP_DATA_DIR}/data:/config
-      - "/mnt/data2/TV Shows":/data/media/tv/hotel:rw
-      - "/mnt/datai/TV Shows":/data/media/tv/india:rw
+      - '/mnt/data2/TV Shows':/data/media/tv/hotel:rw
+      - '/mnt/datai/TV Shows':/data/media/tv/india:rw
       - /mnt/data2/Anime:/data/media/anime/hotel:rw
     ports:
       - ${APP_PORT}:8989
