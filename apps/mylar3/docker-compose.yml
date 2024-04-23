@@ -8,11 +8,11 @@ services:
       - ${APP_PORT}:8090
     volumes:
       - ${APP_DATA_DIR}/data/mylar3-config:/config
-      - ${ROOT_FOLDER_HOST}/media/data/comics:/comics
+      - /mnt/datai/Books/Comics:/comics
       - ${ROOT_FOLDER_HOST}/media/downloads/mylar3:/downloads
     environment:
-      - PUID=1000
-      - PGID=1000
+      - PUID=0
+      - PGID=0
       - TZ=${TZ}
     restart: unless-stopped
     networks:
