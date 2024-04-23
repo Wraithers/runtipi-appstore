@@ -4,8 +4,8 @@ services:
     image: lscr.io/linuxserver/readarr:0.3.23-nightly
     container_name: readarr
     environment:
-      - PUID=0
-      - PGID=0
+      - PUID=1000
+      - PGID=1000
       - TZ=${TZ}
     dns:
       - ${DNS_IP}
