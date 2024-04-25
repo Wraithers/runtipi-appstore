@@ -16,8 +16,8 @@ services:
       - /mnt/data2/Downloads/Media/Completed:/media/torrents/completed:rw
     ports:
       - ${APP_PORT}:${APP_PORT}
-      - 6881:6881
-      - 6881:6881/udp
+      - 3262:6881
+      - 3262:6881/udp
     restart: unless-stopped
     networks:
       - tipi_main_network
