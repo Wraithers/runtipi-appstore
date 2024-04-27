@@ -1,0 +1,60 @@
+{
+  "name": "Penpot",
+  "available": true,
+  "port": 8645,
+  "exposable": true,
+  "id": "penpot",
+  "description": "Penpot - The Open-Source design & prototyping platform.",
+  "tipi_version": 1,
+  "version": "latest",
+  "categories": ["utilities"],
+  "short_desc": "Open-Source design & prototyping platform.",
+  "author": "penpot",
+  "source": "https://github.com/penpot/penpot",
+  "website": "https://penpot.app",
+  "supported_architectures": ["arm64", "amd64"],
+  "form_fields": [
+    {
+      "type": "random",
+      "label": "Penpot postgres password.",
+      "min": 32,
+      "env_variable": "PENPOT_POSTGRES_PASSWORD"
+    },
+    {
+      "type": "email",
+      "label": "Penpot e-mail From.",
+      "min": 32,
+      "env_variable": "PENPOT_EMAIL_FROM"
+    },
+    {
+      "type": "email",
+      "label": "Penpot e-mail Reply To.",
+      "min": 32,
+      "env_variable": "PENPOT_EMAIL_REPLYTO"
+    },
+    {
+      "type": "text",
+      "label": "Penpot e-mail Host.",
+      "min": 32,
+      "env_variable": "PENPOT_EMAIL_HOST"
+    },
+    {
+      "type": "number",
+      "label": "Penpot e-mail Port.",
+      "min": 32,
+      "env_variable": "PENPOT_EMAIL_PORT"
+    },
+    {
+      "type": "email",
+      "label": "Penpot e-mail User ID.",
+      "min": 32,
+      "env_variable": "PENPOT_EMAIL_USERID"
+    },
+    {
+      "type": "text",
+      "label": "Penpot e-mail password.",
+      "min": 32,
+      "env_variable": "PENPOT_EMAIL_PASSWORD"
+    }
+  ]
+}
