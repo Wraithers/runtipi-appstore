@@ -48,7 +48,6 @@
     {
       "type": "password",
       "label": "Penpot e-mail password.",
-      "min": 32,
       "env_variable": "PENPOT_EMAIL_PASSWORD"
     }
   ]
