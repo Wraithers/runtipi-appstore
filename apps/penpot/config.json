@@ -19,6 +19,36 @@
       "label": "Penpot postgres password.",
       "min": 32,
       "env_variable": "PENPOT_POSTGRES_PASSWORD"
+    },
+    {
+      "type": "email",
+      "label": "Penpot e-mail From.",
+      "env_variable": "PENPOT_EMAIL_FROM"
+    },
+    {
+      "type": "email",
+      "label": "Penpot e-mail Reply To.",
+      "env_variable": "PENPOT_EMAIL_REPLYTO"
+    },
+    {
+      "type": "text",
+      "label": "Penpot e-mail Host.",
+      "env_variable": "PENPOT_EMAIL_HOST"
+    },
+    {
+      "type": "number",
+      "label": "Penpot e-mail Port.",
+      "env_variable": "PENPOT_EMAIL_PORT"
+    },
+    {
+      "type": "email",
+      "label": "Penpot e-mail User ID.",
+      "env_variable": "PENPOT_EMAIL_USERID"
+    },
+    {
+      "type": "password",
+      "label": "Penpot e-mail password.",
+      "env_variable": "PENPOT_EMAIL_PASSWORD"
     }
   ]
 }
