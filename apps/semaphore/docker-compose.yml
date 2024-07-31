@@ -1,4 +1,4 @@
-version: "3.9"
+version: '3.9'
 services:
   semaphore:
     container_name: semaphore
@@ -68,4 +68,3 @@ services:
     labels:
       # Runtipi managed
       runtipi.managed: true
-  
