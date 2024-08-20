@@ -50,5 +50,7 @@
       "label": "Penpot e-mail password.",
       "env_variable": "PENPOT_EMAIL_PASSWORD"
     }
-  ]
+  ],
+  "created_at": 1691943801422,
+  "updated_at": 1723566283000
 }
